@@ -51,13 +51,6 @@ function draw() {
     createArrow();
     
   }
-
- // if(arrow.isTouching(redBalloon)||arrow.isTouching(blueBalloon)||arrow.isTouching(greenBalloon)||arrow.isTouching(pinkBalloon)){
-    //redBalloon.destroy();
-    //blueBalloon.destroy();
-    //greenBalloon.destroy();
-    //pinkBalloon.destroy();
- // }
   
   //creating continous balloons
   var select_balloon = Math.round(random(1,1));
@@ -90,7 +83,7 @@ function draw() {
   arrow.scale = 0.3;
 }
 
-function Balloon(){
+
 function redBalloon() {
   var red = createSprite(0,Math.round(random(20, 370)), 10, 10);
   red.addImage(red_balloonImage);
@@ -99,8 +92,6 @@ function redBalloon() {
   red.scale = 0.1;
 
 }
-
-function balloons(){
 
 function blueBalloon() {
   var blue = createSprite(0,Math.round(random(20, 370)), 10, 10);
@@ -123,6 +114,4 @@ function pinkBalloon() {
   pink.velocityX = 3;
   pink.lifetime = 390;
   pink.scale = 0.1;
-}
-}
 }
